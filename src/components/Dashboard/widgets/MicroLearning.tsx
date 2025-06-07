@@ -15,7 +15,7 @@ export const MicroLearning: React.FC<MicroLearningProps> = ({ component }) => {
       <h3 className="text-xl font-medium mb-2">{component.title}</h3>
       <p className="text-sm text-gray-600 mb-6">{data.subtitle}</p>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {data.cards.map((card: any, index: number) => (
           <Card key={index} className="border border-gray-200">
             <CardHeader className="pb-2">
@@ -34,14 +34,14 @@ export const MicroLearning: React.FC<MicroLearningProps> = ({ component }) => {
                 </div>
               </CardTitle>
             </CardHeader>
-            <CardContent>
+            <CardContent className="flex flex-col h-full p-4 pt-0">
               <div className="flex mb-1">
                 <span className="text-xs bg-gray-100 px-2 py-1 rounded mr-2">{card.level}</span>
                 <span className="text-xs bg-gray-100 px-2 py-1 rounded">{card.type}</span>
                 <span className="text-xs text-gray-500 ml-auto">{card.duration}</span>
               </div>
               <p className="text-sm text-gray-600 my-3">{card.description}</p>
-              
+
               <div className="space-y-2">
                 <Button variant="outline" size="sm" className="w-full text-sm">
                   {card.action}

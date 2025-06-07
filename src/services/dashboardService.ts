@@ -190,7 +190,8 @@ export class DashboardService {
               title: 'Profile Overview',
               position: { row: 1, col: 9, span: 4 },
               data: {
-                profileImage: '/lovable-uploads/6a215aca-31f8-4d15-994c-ee047e5d7300.png',
+                // profileImage: '/lovable-uploads/6a215aca-31f8-4d15-994c-ee047e5d7300.png',
+                profileImage: '/lovable-uploads/image.png',
                 completionText: 'Complete your Profile',
                 insights: {
                   title: 'Get your insights, just complete the assessment',

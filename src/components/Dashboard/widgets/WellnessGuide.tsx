@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { DashboardComponent } from '@/types/dashboard';
 import { Button } from '@/components/ui/button';
@@ -41,9 +40,9 @@ export const WellnessGuide: React.FC<WellnessGuideProps> = ({ component }) => {
         {data.illustration && (
           <div className="ml-auto">
             <img 
-              src="/lovable-uploads/6a215aca-31f8-4d15-994c-ee047e5d7300.png" 
-              alt="Wellness illustration" 
-              className="h-24"
+              src="https://api.dicebear.com/7.x/micah/svg?seed=wellness&backgroundColor=6366f1&mouth=smile&radius=50&backgroundColor=6366f1"
+              alt="Wellness professional" 
+              className="h-24 w-24 rounded-full object-cover bg-indigo-100"
               style={{ opacity: 0.9 }}
             />
           </div>
